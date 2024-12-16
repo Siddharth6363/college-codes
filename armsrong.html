@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+
+    </head>
+
+    <body>
+       
+        <script>
+
+           const num = parseInt(prompt("Enter nummber:"));
+           let temp = num;
+           let sum=0;
+
+           while(temp>0)
+           {
+            let r = temp%10;
+            sum = sum+(r*r*r);
+            temp=Math.floor(temp/10);
+           }
+
+           if(sum === num)
+           {
+            alert("its ARMSTRONG");
+
+           }
+
+           else{
+            alert("Its not armstrong");
+           }
+
+
+
+        </script>
+
+    </body>
+</html>
